@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>인사교류·채용제도 개선 안내</title>
+<meta name="description" content="행정안전부 「지방공무원 임용령」·「지방공무원 평정규칙」 개정안 입법예고 내용을 시민 눈높이로 정리한 안내 페이지">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f6f7f4;
+    --surface: #ffffff;
+    --ink: #1e2a2e;
+    --muted: #56656a;
+    --line: #d7ddd9;
+    --accent: #1d6a63;
+    --accent-soft: #e3efec;
+    --stamp: #9a3b2e;
+    --serif: "Gowun Batang", "Nanum Myeongjo", "AppleMyungjo", serif;
+    --sans: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #151b1d;
+      --surface: #1c2427;
+      --ink: #e6ecea;
+      --muted: #a2b0b3;
+      --line: #33403f;
+      --accent: #6cc2b6;
+      --accent-soft: #203634;
+      --stamp: #e28a7a;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #151b1d;
+    --surface: #1c2427;
+    --ink: #e6ecea;
+    --muted: #a2b0b3;
+    --line: #33403f;
+    --accent: #6cc2b6;
+    --accent-soft: #203634;
+    --stamp: #e28a7a;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.75;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 40px 56px;
+    display: grid;
+    gap: 40px;
+  }
+
+  /* 머리 */
+  header { display: grid; gap: 16px; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+    font-size: 13px; color: var(--muted); letter-spacing: 0.02em;
+  }
+  .stamp {
+    border: 1.5px solid var(--stamp); color: var(--stamp);
+    padding: 2px 10px; border-radius: 3px; font-weight: 700; font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    line-height: 1.35;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .lead { margin: 0; color: var(--muted); max-width: 62ch; }
+
+  .keypoints {
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 20px 22px;
+  }
+  .keypoints h2 {
+    font-size: 14px; letter-spacing: 0.08em; color: var(--accent);
+    margin: 0 0 8px; font-weight: 700;
+  }
+  .keypoints ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+
+  /* 본문 섹션 */
+  section { display: grid; gap: 16px; }
+  section > h2 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink);
+    display: flex; gap: 12px; align-items: baseline;
+  }
+  section > h2 .no {
+    font-family: var(--sans); font-size: 0.9rem; color: var(--accent); font-weight: 700;
+  }
+  section > p { margin: 0; color: var(--muted); }
+
+  ul.items { list-style: none; margin: 0; padding: 0; display: grid; }
+  ul.items li {
+    display: grid; gap: 4px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  ul.items li:last-child { border-bottom: 0; }
+  .item-title { font-weight: 700; font-size: 1.05rem; }
+  .item-body { margin: 0; }
+  .plain {
+    margin: 0; font-size: 14px; color: var(--accent);
+  }
+  .plain::before { content: "쉽게 말하면 · "; font-weight: 700; }
+
+  /* 일정 */
+  aside.schedule {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 20px 22px;
+    display: grid; gap: 12px;
+  }
+  aside.schedule h2 { margin: 0; font-size: 1.1rem; }
+  .timeline { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+  .timeline li::marker { color: var(--accent); font-weight: 700; }
+
+  /* 인용 */
+  figure.quote { margin: 0; display: grid; gap: 10px; }
+  blockquote {
+    margin: 0;
+    padding: 4px 0 4px 20px;
+    border-left: 3px solid var(--accent);
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+  blockquote p { margin: 0; }
+  blockquote p + p { margin-top: 10px; }
+  figcaption { font-size: 14px; color: var(--muted); padding-left: 23px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    font-size: 13px; color: var(--muted);
+    display: grid; gap: 4px;
+  }
+  footer p { margin: 0; }
+  .tel { font-variant-numeric: tabular-nums; user-select: all; }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header>
+    <div class="meta">
+      <span class="stamp">입법예고</span>
+      <span>행정안전부 지방인사제도과</span>
+      <span>2026. 5. 11. ~ 6. 10.</span>
+    </div>
+    <h1>공무원 인사교류 활성화 및 채용제도 개선 입법예고</h1>
+    <p class="lead">행정안전부가 중앙부처·지방정부·민간기업 사이를 오가며 일하는 공무원에게 인사 혜택을 주고, 지방공무원 채용시험의 부담은 줄이는 방향으로 「지방공무원 임용령」과 「지방공무원 평정규칙」을 고칩니다.</p>
+
+    <div class="keypoints" role="note" aria-label="한눈에 보기">
+      <h2>한눈에 보기</h2>
+      <ul>
+        <li>핵심 인사교류 직위·민간기업 전담공무원은 승진에 필요한 기간이 최대 1년 줄어듭니다.</li>
+        <li>1년 이상 일하며 좋은 성과를 내면 특별승진 기회가 주어지고, 평가 등급도 일정 수준 이상 보장됩니다.</li>
+        <li>2027년부터 8급 공채 한국사 과목이 한국사능력검정시험(3급 이상)으로 바뀝니다.</li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="incentive" aria-labelledby="h-incentive">
+    <h2 id="h-incentive"><span class="no">1.</span>인사 인센티브</h2>
+    <p>국책사업이나 지역 현안을 위해 새로 만드는 ‘핵심 인사교류’ 직위와, 지역 투자 유치를 맡는 ‘민간기업 전담공무원’이 대상입니다.</p>
+    <ul class="items">
+      <li>
+        <span class="item-title">승진 소요 연수 단축</span>
+        <p class="item-body">해당 직위에서 교류한 기간의 절반을, 최대 1년까지 승진에 필요한 근무 기간에서 빼 줍니다.</p>
+        <p class="plain">2년 교류하면 승진이 1년 빨라질 수 있습니다.</p>
+      </li>
+      <li>
+        <span class="item-title">특별승진 기회 부여</span>
+        <p class="item-body">해당 직위에서 1년 이상 근무하며 우수한 성과를 낸 공무원에게 특별승진 기회를 줍니다.</p>
+      </li>
+      <li>
+        <span class="item-title">대우공무원 혜택 확대</span>
+        <p class="item-body">지금은 인사교류자에게만 주던 ‘대우공무원 산정 시 교류 기간 경력 100% 단축’ 혜택을 민간기업 전담공무원에게도 똑같이 적용합니다.</p>
+      </li>
+      <li>
+        <span class="item-title">평가·성과급 보장</span>
+        <p class="item-body">인사교류자는 일반 공무원과 따로 평가받으며, 근무성적평정은 최소 ‘우’, 성과급은 최소 ‘A’ 등급을 보장받습니다. 최상위 등급을 받은 우수 성과자에게는 특별성과가산금을 줄 수 있는 근거도 생깁니다.</p>
+        <p class="plain">교류 근무 때문에 평가에서 손해 보지 않도록 합니다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="recruitment" aria-labelledby="h-recruitment">
+    <h2 id="h-recruitment"><span class="no">2.</span>채용제도 개선</h2>
+    <p>지방공무원 공개채용과 경력경쟁채용 제도를 수험생 부담은 줄이고 우수 인재는 더 뽑을 수 있게 바꿉니다.</p>
+    <ul class="items">
+      <li>
+        <span class="item-title">8급 한국사 과목 대체</span>
+        <p class="item-body">2027년부터 8급 공채 한국사 과목을 9급과 같이 ‘한국사능력검정시험(3급 이상)’으로 대체합니다.</p>
+        <p class="plain">8급과 9급을 함께 준비하는 수험생이 한국사 공부를 한 번만 하면 됩니다.</p>
+      </li>
+      <li>
+        <span class="item-title">경력 요건 단축</span>
+        <p class="item-body">최신 경력이 중요한 특정 분야 경력경쟁채용 시험은 필요한 경력을 1년 범위에서 줄일 수 있는 근거를 마련합니다.</p>
+      </li>
+      <li>
+        <span class="item-title">우수 인재 추천채용 직급 확대</span>
+        <p class="item-body">지금은 8급 이하로 운영하는 우수 인재 추천채용제 대상 직급을 7급까지 넓힙니다.</p>
+      </li>
+      <li>
+        <span class="item-title">취약 청년 공직 진출 지원</span>
+        <p class="item-body">9급 공채 저소득층 구분모집 대상에 ‘자립준비청년’과 ‘보호기간 연장청년’을 새로 넣습니다. 기초생활수급자·한부모가족 지원 대상자에게 요구하던 자격 유지 기간도 2년 이상에서 1년으로 줄입니다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <aside class="schedule" aria-labelledby="h-schedule">
+    <h2 id="h-schedule">앞으로의 일정과 의견 내는 방법</h2>
+    <ol class="timeline">
+      <li><strong>2026년 5월 11일 ~ 6월 10일</strong> 입법예고 (국민 의견 접수)</li>
+      <li><strong>예고 종료 후</strong> 규제심사·법제처 심사</li>
+      <li><strong>2026년 하반기</strong> 공포·시행 예정</li>
+    </ol>
+    <p style="margin:0">의견은 누구나 행정안전부 누리집(<a href="https://www.mois.go.kr" target="_blank" rel="noopener">mois.go.kr</a>) 또는 대한민국 전자관보로 낼 수 있습니다.</p>
+  </aside>
+
+  <figure class="quote">
+    <blockquote>
+      <p>“이번 조치는 프로젝트 기반 인사교류를 통해 대규모 국책사업 등에 참여하는 공무원에게 파격적인 인센티브를 부여해 보다 성공적인 사업 추진을 돕기 위한 것”</p>
+      <p>“앞으로도 공직사회의 개방성을 확대하고 활력을 제고할 수 있도록 지방인사제도를 적극적으로 개선해 나가겠다”</p>
+    </blockquote>
+    <figcaption>윤호중 행정안전부 장관</figcaption>
+  </figure>
+
+  <footer>
+    <p>출처: 행정안전부 보도자료 「공무원 인사교류 활성화 및 채용제도 개선 입법예고」</p>
+    <p>문의: 행정안전부 지방인사제도과 김정민 <span class="tel">044-205-3347</span></p>
+  </footer>
+
+</main>
+</body>
+</html>
